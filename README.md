@@ -4,4 +4,4 @@
 ![Testing Badge](https://github.com/SAT510/SAT-Repo/actions/workflows/python-app.yml/badge.svg)
 
 
-[![Coverage Badge](https://SAT510.github.io/SAT-Repo/badges/coverage.svg)](https://github.com/SAT510/SAT-Repo/actions)
+<!-- [![Coverage Badge](https://SAT510.github.io/SAT-Repo/badges/coverage.svg)](https://github.com/SAT510/SAT-Repo/actions) -->
