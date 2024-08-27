@@ -1,10 +1,11 @@
-a = 5
-b = 0
-
 def divide(a,b):
     c = a/b
     return c
 
-c = divide(a,b)
+def add(a,b):
+    c = a+b
+    return c
 
-print(f"{a} / {b} = {c}")
+def multiply(a,b):
+    c = a*b
+    return c
