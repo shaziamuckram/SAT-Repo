@@ -30,10 +30,10 @@ jobs:
       run: |
         pytest division_test.py
     - name: Generate Coverage Badge
-        uses: cicirello/jacoco-badge-generator@v2.1.0
-        with:
-          coverage-files: ./coverage.xml
-          badge-file: ./coverage-badge.svg
+      uses: cicirello/jacoco-badge-generator@v2.1.0
+      with:
+        coverage-files: ./coverage.xml
+        badge-file: ./coverage-badge.svg
     - name: Upload Coverage Badge
       uses: actions/upload-artifact@v2
       with:
