@@ -29,3 +29,6 @@ jobs:
     - name: Test with pytest
       run: |
         pytest division_test.py
+    - name: Update Coverage Badge
+      if: github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
+      uses: SAT510/coverage-badge-action@main
