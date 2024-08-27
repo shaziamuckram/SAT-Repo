@@ -29,6 +29,13 @@ jobs:
     - name: Test with pytest
       run: |
         pytest division_test.py
-    # - name: Update Coverage Badge
-    #   if: github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
-    #   uses: SAT510/coverage-badge-action@main
+    - name: Generate Coverage Badge
+        uses: cicirello/jacoco-badge-generator@v2.1.0
+        with:
+          coverage-files: ./coverage.xml
+          badge-file: ./coverage-badge.svg
+    - name: Upload Coverage Badge
+      uses: actions/upload-artifact@v2
+      with:
+        name: coverage-badge
+        path: ./coverage-badge.svg
