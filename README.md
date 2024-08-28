@@ -3,4 +3,4 @@
 ![GitHub License](https://img.shields.io/github/license/SAT510/SAT-Repo)
 ![Testing Badge](https://github.com/SAT510/SAT-Repo/actions/workflows/python-app.yml/badge.svg)
 
-![Coverage Badge](./coverage-badge.svg)
+<!-- ![Coverage Badge](./coverage-badge.svg) -->
