@@ -26,21 +26,27 @@ jobs:
     - name: Install dependencies
       run: |
         pip install pytest
-    - name: Run tests with coverage
-        run: pytest --cov=your_module tests/ --cov-report=xml
+    - name: Test with pytest
+      run: |
+       pip install pytest pytest-cov
+       pytest
 
-      - name: Generate coverage badge
-        uses: cicirello/jacoco-badge-generator@v2.1.0
-        with:
-          coverage-files: coverage.xml
-          badge-file: coverage-badge.svg
+    
+    # - name: Run tests with coverage
+    #     run: pytest --cov=your_module tests/ --cov-report=xml
 
-      - name: Commit coverage badge
-        run: |
-          git config --global user.email "shaziamuckram@gmail.com"
-          git config --global user.name "shaziamuckram"
-          git add coverage-badge.svg
-          git commit -m "Update coverage badge"
-          git push
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      # - name: Generate coverage badge
+      #   uses: cicirello/jacoco-badge-generator@v2.1.0
+      #   with:
+      #     coverage-files: coverage.xml
+      #     badge-file: coverage-badge.svg
+
+      # - name: Commit coverage badge
+      #   run: |
+      #     git config --global user.email "shaziamuckram@gmail.com"
+      #     git config --global user.name "shaziamuckram"
+      #     git add coverage-badge.svg
+      #     git commit -m "Update coverage badge"
+      #     git push
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
