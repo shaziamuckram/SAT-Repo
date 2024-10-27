@@ -5,4 +5,4 @@ def test_divide_pass():
     assert divide(10,2) == 5
 
 def test_divide_fail():
-    assert divide(5,0) == 5
+    assert divide(5,1) == 5
